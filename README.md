@@ -1,6 +1,8 @@
 # tingyuxuan-ing
 离线版图书馆管理系统
 
+原CSDN地址: https://blog.csdn.net/qwe1314225/article/details/79879484
+
 # 背景
 2018年毕业前由于各种原因从实习公司辞职回到学校（没敢告诉家里人），电脑坏了，想换台电脑，但是又穷，就去网吧充了一百块，耗时一个多礼拜，写了这个项目；
 最后卖了几百块（白条买了电脑），后面工作原因，磁盘坏了一次，代码早已不知道放哪去了。最近发现CSDN很多小伙伴私信，无奈，从老手机的聊天文件中找了出来。
@@ -20,9 +22,9 @@
  ```
 
 # 预览
-![login](https://github.com/holyhost/tingyuxuan-ing/tree/master/preview/t_login2.gif)
+![login](http://zxyoyo.com/images/netfile/zz2021-02-01202011.gif)
 
 # 喜欢
 
 创作不宜，想想曾没电脑在网吧写代码的日子，放一张赞赏码上，喜欢这个项目的朋友打赏一下呗！感谢！
-![赞赏](https://github.com/holyhost/tingyuxuan-ing/tree/master/preview/qt.png)
+![赞赏](http://zxyoyo.com/images/netfile/zz2021-02-01201851.png)
