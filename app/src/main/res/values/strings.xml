@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">听雨喧</string>
+    <string name="header_introduce">这个人很懒，没有写介绍。</string>
+    <string name="start_get_data">正在准备数据。。。</string>
+
+    <string name="title_activity_start">欢迎来到听雨轩</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="start_button">启动成功</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="login_hint_account">请输入您的帐号</string>
+    <string name="login_hint_password">请输入您的密码</string>
+    <string name="login_hint_password2">请再次输入您的密码</string>
+    <string name="login_hint_email">请输入您的邮箱帐号用于找回密码</string>
+    <string name="toolbar_hint_search">输入关键词</string>
+    <string name="login">登录</string>
+    <string name="forget">忘记密码</string>
+    <string name="register">注册帐号</string>
+    <string name="back">返回</string>
+    <string name="members">普通用户</string>
+
+
+    <string name="manager_add">增加书籍</string>
+    <string name="manager_add_ten">增加十本书</string>
+    <string name="manager_delete">删除书籍</string>
+    <string name="manager_select_all_book">管理书籍</string>
+    <string name="manager_select_all_user">管理用户</string>
+    <string name="manager_select_all_borrow">借阅记录</string>
+    <string name="manager_login">操作记录</string>
+    <string name="manager_update_book">修改书籍</string>
+
+    <!--navigation menu-->
+    <string name="item_home">主页</string>
+    <string name="item_downloaded">我的借阅</string>
+    <string name="item_favourite">我的收藏</string>
+    <string name="item_history">阅读记录</string>
+    <string name="item_app">应用推荐</string>
+    <string name="item_settings">设置与帮助</string>
+    <string name="item_manager">管理员入口</string>
+    <string name="item_exit">退出当前帐号</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+</resources>

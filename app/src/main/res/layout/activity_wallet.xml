@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.WalletActivity">
+    <include layout="@layout/layout_toolbar"/>
+
+
+    <RelativeLayout
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <tingyuxuan.hosition.zxyoyo.com.tingyuxuan.view.design.CircleImageView
+            android:id="@+id/user_avatar_view"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_centerHorizontal="true"
+            app:border_color="@color/colorPrimaryDark"
+            app:border_width="1dp" />
+        <TextView
+            android:id="@+id/tv_yue"
+            android:textSize="28sp"
+            android:layout_centerInParent="true"
+            android:text="18"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:inputType="number"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/et_input_yue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="99dp"
+        android:hint="请输入需要充值的金额" />
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_alignParentBottom="true"
+        android:text="确认"
+        android:textColor="@color/window_background"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

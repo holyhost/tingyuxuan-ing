@@ -1,0 +1,70 @@
+package tingyuxuan.hosition.zxyoyo.com.tingyuxuan.adapter;
+
+import android.content.Context;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import java.util.List;
+
+import tingyuxuan.hosition.zxyoyo.com.tingyuxuan.R;
+import tingyuxuan.hosition.zxyoyo.com.tingyuxuan.bean.BorrowBean;
+import tingyuxuan.hosition.zxyoyo.com.tingyuxuan.bean.OperationBean;
+import tingyuxuan.hosition.zxyoyo.com.tingyuxuan.utils.DbUtil;
+
+/**
+ * Created by Administrator on 2018/4/8.
+ */
+
+public class OperationRecordAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+
+    private Context context;
+    private List<OperationBean> books;
+
+
+    public OperationRecordAdapter(Context context, List<OperationBean> books) {
+        this.context = context;
+        this.books = books;
+    }
+
+    @Override
+    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(context).inflate(R.layout.item_record_operation, parent, false);
+        return new MyViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(final RecyclerView.ViewHolder holder, int position) {
+        if(holder instanceof MyViewHolder){
+            OperationBean book = books.get(position);
+            ((MyViewHolder) holder).tvName.setText("用户名："+book.getUsername());
+            ((MyViewHolder) holder).tvDuration.setText("行为：："+book.getOperation());
+            ((MyViewHolder) holder).tvTime.setText("操作时间："+book.getTime());
+
+
+        }
+    }
+
+    @Override
+    public int getItemCount() {
+        return books.size();
+    }
+
+    class MyViewHolder extends RecyclerView.ViewHolder {
+
+        TextView tvName;
+        TextView tvDuration;
+        TextView tvTime;
+
+
+
+        public MyViewHolder(View itemView) {
+            super(itemView);
+            tvName = itemView.findViewById(R.id.tv_name);
+            tvDuration = itemView.findViewById(R.id.tv_duration);
+            tvTime = itemView.findViewById(R.id.tv_time);
+        }
+    }
+}

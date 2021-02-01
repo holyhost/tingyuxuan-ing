@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:background="@drawable/bg_tv1"
+    android:layout_width="400dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:gravity="center"
+        android:padding="2dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/dialog_title"
+        android:text="书籍的名字"
+        android:singleLine="true"
+        android:layout_gravity="center_horizontal"
+        android:textSize="23sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/dialog_pub"
+        android:text="出版社"
+        android:layout_marginLeft="20dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/dialog_look"
+        android:text="浏览量"
+        android:layout_marginLeft="20dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/dialog_price"
+        android:text="价格"
+        android:layout_marginLeft="20dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/dialog_count"
+        android:text="藏书数量"
+        android:layout_marginLeft="20dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/dialog_star"
+        android:text="介绍"
+        android:layout_marginLeft="20dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/dialog_introduce"
+        android:text="介绍"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:minHeight="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <FrameLayout
+            android:id="@+id/bannerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" >
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bannerContainer"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="阅读" />
+
+            <Button
+                android:drawableRight="@drawable/ic_star_24dp"
+                android:id="@+id/btn_give"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="收藏" />
+            <Button
+                android:id="@+id/btn_borrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="借阅" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/theme_color_primary"
+        android:id="@+id/btn_ok"
+        android:text="关闭"
+        android:textColor="@color/white_30"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+</LinearLayout>

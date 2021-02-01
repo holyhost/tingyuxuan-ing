@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/header_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:clickable="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/background_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end|bottom"
+            android:clickable="true"
+            android:src="@drawable/home_menu_bg_click"
+            android:tint="@color/nav_head_image_background" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <tingyuxuan.hosition.zxyoyo.com.tingyuxuan.view.design.CircleImageView
+            android:id="@+id/user_avatar_view"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:layout_gravity="start|top"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ico_user_default"
+            app:border_color="@android:color/white"
+            app:border_width="1dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_head_noftiy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_account_balance_wallet_black_24dp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/subtitle_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_avatar_view"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="10dp"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/user_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:background="@drawable/white_border"
+                    android:text="LV1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/round_wihte_bg"
+                android:padding="3dp"
+                android:text="@string/app_name"
+                android:textColor="@color/nav_head_roung_text_background"
+                android:textSize="10sp" />
+
+            <TextView
+                android:text="@string/header_introduce"
+                android:id="@+id/user_other_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

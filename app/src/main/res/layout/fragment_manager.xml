@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/manager_back"
+    android:orientation="vertical"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_toolbar"/>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <Button
+    android:id="@+id/btn_manager_add"
+    android:text="@string/manager_add"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <!--<Button-->
+        <!--android:id="@+id/btn_manager_add_ten"-->
+        <!--android:text="@string/manager_add_ten"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_select_one"
+                android:text="查看书籍"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_delete_number"
+                android:hint="请输入书籍编号"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_marginLeft="10dp"
+                android:id="@+id/btn_manager_delete"
+                android:text="@string/manager_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_manager_select_all_book"
+        android:text="@string/manager_select_all_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_manager_select_all_user"
+        android:text="@string/manager_select_all_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_manager_login"
+        android:text="@string/manager_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_manager_record_borrow"
+        android:text="@string/manager_select_all_borrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
